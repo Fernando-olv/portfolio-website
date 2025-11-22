@@ -1,0 +1,300 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Fernando Oliveira Fígaro // Cybersecurity & Code</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description"
+        content="Portfolio of Fernando Oliveira Fígaro – cybersecurity, Python, blue team tooling and practical labs." />
+    <link rel="stylesheet" href="assets/css/css.css">
+</head>
+
+<body>
+    <div class="page">
+        <header class="nav fade-in delay-1">
+            <div class="nav-left">
+                <div class="nav-brand">[root@figaro]# whoami</div>
+                <div class="nav-path">/home/fernando/portfolio</div>
+            </div>
+            <nav class="nav-menu">
+                <a href="#about">about</a>
+                <a href="#stack">stack</a>
+                <a href="#projects">labs</a>
+                <a href="#fingerprint">fingerprint</a>
+                <a href="#contact">contact</a>
+            </nav>
+        </header>
+
+        <main>
+            <section class="hero">
+                <div class="hero-main fade-in delay-2">
+                    <div class="hero-kicker">
+                        <span class="hero-kicker-dot"></span>
+                        live node // blue-team oriented
+                    </div>
+
+                    <h1 class="hero-title">
+                        <span class="hero-title-glitch" data-text="FERNANDO OLIVEIRA FÍGARO">
+                            FERNANDO OLIVEIRA FÍGARO
+                        </span>
+                    </h1>
+                    <p class="hero-subtitle">
+                        Cybersecurity professional and Python instructor focused on blue-team operations,
+                        incident response and automating the boring parts of defense.
+                    </p>
+
+                    <div class="hero-tags">
+                        <span class="tag">blue team &amp; detection</span>
+                        <span class="tag">python // flask</span>
+                        <span class="tag">SIEM &amp; log pipelines</span>
+                        <span class="tag">linux &amp; networking</span>
+                        <span class="tag">threat simulations</span>
+                    </div>
+
+                    <div class="hero-actions">
+                        <a class="btn" href="#projects">
+                            browse labs
+                            <span>↳</span>
+                        </a>
+                        <a class="btn btn-outline" href="#contact">
+                            deploy message
+                        </a>
+                    </div>
+
+                    <div class="hero-terminal">
+                        <div class="terminal-head">
+                            <div class="terminal-dots">
+                                <span class="terminal-dot"></span>
+                                <span class="terminal-dot"></span>
+                                <span class="terminal-dot"></span>
+                            </div>
+                            <span>secure_shell // session: figaro@net</span>
+                        </div>
+                        <div class="terminal-body">
+                            <div>$ nmap -sC -sV fer-cybersec.lab</div>
+                            <div>22/tcp open ssh OpenSSH - hardened</div>
+                            <div>80/tcp open http custom static site</div>
+                            <div>443/tcp open https tls13, perfect forward secrecy</div>
+                            <div>1337/tcp open custom blue-team &amp; teaching toolkit</div>
+
+                            <div>$ cat mission.txt</div>
+                            <div>&gt; teach, defend, and build automation that actually helps defenders</div>
+
+                            <div>$ <span id="terminal-typed"></span><span class="cursor"></span></div>
+                        </div>
+                    </div>
+                </div>
+
+                <aside class="hero-side fade-in delay-3">
+                    <div class="hero-side-header">
+                        <div class="hero-side-label">visual feed</div>
+                        <div class="hero-side-status">status: online ▌▌</div>
+                    </div>
+
+                    <div class="hero-gif-wrap">
+                        <!-- Replace src with your own hacker-ish GIF -->
+                        <img src="assets/gifs/hack_console.gif" alt="Animated terminal / code rain" />
+                        <div class="hero-gif-overlay"></div>
+                        <div class="hero-gif-caption">
+                            // signal captured from an unnamed urban grid
+                        </div>
+                    </div>
+
+                    <div class="hero-side-notes">
+                        Between SOC noise and classroom whiteboards, I design labs and exercises
+                        that feel closer to underground cons than to a slide deck.
+                        <div class="hero-side-tags">
+                            <span class="chip">ctf badges</span>
+                            <span class="chip">log forensics</span>
+                            <span class="chip">infra puzzles</span>
+                            <span class="chip">covert dashboards</span>
+                        </div>
+                    </div>
+                </aside>
+            </section>
+
+            <!-- STACK -->
+            <section id="stack" class="fade-in delay-3">
+                <div class="section-header">
+                    <h2 class="section-title">stack // tools of choice</h2>
+                    <div class="section-line"></div>
+                </div>
+
+                <div class="grid-2">
+                    <div class="card">
+                        <div class="card-title">logging &amp; monitoring</div>
+                        <div class="card-body">
+                            <div class="stack-list">
+                                <span class="stack-item">Filebeat &amp; log shipping</span>
+                                <span class="stack-item">Elasticsearch</span>
+                                <span class="stack-item">Kibana dashboards</span>
+                                <span class="stack-item">OpenSearch</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-title">infrastructure</div>
+                        <div class="card-body">
+                            <div class="stack-list">
+                                <span class="stack-item">Linux (server &amp; workstation)</span>
+                                <span class="stack-item">Docker &amp; Compose</span>
+                                <span class="stack-item">Nginx / reverse proxies</span>
+                                <span class="stack-item">Wireshark &amp; tcpdump</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-title">development</div>
+                        <div class="card-body">
+                            <div class="stack-list">
+                                <span class="stack-item">Python (requests, asyncio)</span>
+                                <span class="stack-item">Flask &amp; FastAPI</span>
+                                <span class="stack-item">Pandas &amp; data inspection</span>
+                                <span class="stack-item">SQL (SQLite, PostgreSQL)</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-title">tools &amp; automation</div>
+                        <div class="card-body">
+                            <div class="stack-list">
+                                <span class="stack-item">Git &amp; GitHub</span>
+                                <span class="stack-item">Markdown &amp; Jupyter</span>
+                                <span class="stack-item">Bash &amp; shell scripts</span>
+                                <span class="stack-item">Streamlit dashboards</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- LABS / PROJECTS -->
+            <section id="projects" class="fade-in delay-4">
+                <div class="section-header">
+                    <h2 class="section-title">labs // selected operations</h2>
+                    <div class="section-line"></div>
+                </div>
+
+                <div class="projects-grid">
+                    <article class="project">
+                        <div class="project-tag">log surveillance</div>
+                        <div class="project-name">siem homelab</div>
+                        <div class="project-desc">
+                            Attacker vs defender setup with real log collection and detection.
+                        </div>
+                        <div class="project-meta">
+                            <span>python · docker · elastic</span>
+                            <div class="project-links">
+                                <a class="pill-link" href="#" target="_blank">repo (soon)</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project">
+                        <div class="project-tag">blue-team utilities</div>
+                        <div class="project-name">http inspector</div>
+                        <div class="project-desc">
+                            Inspect headers, cookies and auth flows in practice scenarios.
+                        </div>
+                        <div class="project-meta">
+                            <span>flask · requests · teaching</span>
+                            <div class="project-links">
+                                <a class="pill-link" href="#" target="_blank">demo (soon)</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project">
+                        <div class="project-tag">detection engineering</div>
+                        <div class="project-name">query builder</div>
+                        <div class="project-desc">
+                            Tool for crafting SIEM queries and testing detection logic.
+                        </div>
+                        <div class="project-meta">
+                            <span>python · visualization · siem</span>
+                            <div class="project-links">
+                                <a class="pill-link" href="#" target="_blank">soon</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project">
+                        <div class="project-tag">incident response</div>
+                        <div class="project-name">ir toolkit</div>
+                        <div class="project-desc">
+                            Collection of scripts for rapid incident response workflows.
+                        </div>
+                        <div class="project-meta">
+                            <span>bash · python · automation</span>
+                            <div class="project-links">
+                                <a class="pill-link" href="#" target="_blank">soon</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <!-- NETWORK FINGERPRINT -->
+            <section id="fingerprint" class="fade-in delay-3">
+                <div class="section-header">
+                    <h2 class="section-title">network fingerprint // exposed metadata</h2>
+                    <div class="section-line"></div>
+                </div>
+
+                <div class="card">
+                    <div class="card-title">what the internet sees</div>
+                    <div class="card-body" id="ip-info">
+                        running recon...
+                    </div>
+
+                    <a href="https://refer-nordvpn.com/cmmjrvUxfCb" target="_blank" class="btn"
+                        style="margin-top: 14px; display: inline-block;">
+                        secure your connection ↳
+                    </a>
+                </div>
+            </section>
+
+            <!-- CONTACT -->
+            <section id="contact" class="fade-in delay-2">
+                <div class="section-header">
+                    <h2 class="section-title">contact // reach out</h2>
+                    <div class="section-line"></div>
+                </div>
+
+                <div class="contact-terminal">
+                    <div class="terminal-head">
+                        <div class="terminal-dots">
+                            <span class="terminal-dot"></span>
+                            <span class="terminal-dot"></span>
+                            <span class="terminal-dot"></span>
+                        </div>
+                        <span>ops-console // contact.sh</span>
+                    </div>
+                    <div class="terminal-body">
+                        $ ./contact.sh --mode secure --medium email<br />
+                        &gt; packaging message...<br />
+                        &gt; encrypting payload...<br />
+                        &gt; tunneling through corporate infrastructure...<br />
+                        &gt; dropping into my inbox.<br />
+                        <br />
+                        
+                    </div>
+                </div>
+            </section>
+
+            <div class="footer">
+                &copy; <span id="year"></span> Fernando Oliveira Fígaro // built on static files, caffeine and log
+                noise.
+            </div>
+        </main>
+    </div>
+
+
+    <script src="assets/javascript/javascript.js"></script>
+</body>
+
+</html>
