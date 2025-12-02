@@ -908,3 +908,323 @@ section {
   color: var(--muted, #7f8b99);
   opacity: 0.75;
 }
+/* =======================
+   ZOMBIE DETECTOR LINK BUTTON
+   ======================= */
+.zombie-chip-btn {
+    margin-top: 12px;
+    display: inline-block;
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    padding: 6px 12px;
+    border-radius: 999px;
+    border: 1px solid rgba(0, 255, 195, 0.35);
+    background: radial-gradient(circle at top left, rgba(0,255,195,0.15), rgba(0,0,0,0.8));
+    color: var(--accent);
+    text-decoration: none;
+    letter-spacing: 0.06em;
+    cursor: pointer;
+    transition: transform 0.15s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+    box-shadow: 0 0 14px rgba(0,255,195,0.18);
+}
+
+.zombie-chip-btn:hover {
+    border-color: var(--accent);
+    transform: translateY(-2px);
+    box-shadow: 0 0 22px rgba(0,255,195,0.35);
+    background: rgba(0,255,195,0.15);
+}
+
+.zombie-chip-btn:active {
+    transform: translateY(0px);
+    box-shadow: 0 0 10px rgba(0,255,195,0.25);
+}
+
+
+/* =======================
+   ZOMBIE DETECTOR PAGE
+   ======================= */
+
+.zombie-section {
+    min-height: calc(100vh - 140px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.zombie-card {
+    max-width: 640px;
+    width: 100%;
+    border-radius: var(--radius-xl);
+    border: 1px solid rgba(0, 255, 195, 0.25);
+    padding: 24px 20px 28px;
+    background:
+        radial-gradient(circle at top left, rgba(0, 255, 195, 0.16), transparent 55%),
+        linear-gradient(135deg, rgba(4, 8, 16, 0.96), rgba(1, 2, 5, 0.96));
+    box-shadow: var(--shadow-soft);
+    position: relative;
+    overflow: hidden;
+}
+
+.zombie-card::before {
+    content: "";
+    position: absolute;
+    inset: -35%;
+    background:
+        radial-gradient(circle at 0 0, rgba(0, 255, 195, 0.15), transparent 60%),
+        radial-gradient(circle at 100% 100%, rgba(255, 46, 136, 0.18), transparent 60%);
+    mix-blend-mode: screen;
+    opacity: 0.9;
+    pointer-events: none;
+}
+
+.zombie-tagline {
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.16em;
+    color: var(--muted);
+    margin-bottom: 8px;
+    position: relative;
+    z-index: 1;
+}
+
+.zombie-title {
+    font-family: var(--font-mono);
+    font-size: clamp(1.4rem, 3vw, 1.8rem);
+    text-transform: uppercase;
+    letter-spacing: 0.18em;
+    margin: 0 0 6px;
+    color: var(--accent);
+    position: relative;
+    z-index: 1;
+}
+
+.zombie-subtitle {
+    font-size: 0.9rem;
+    color: var(--muted);
+    margin: 0 0 14px;
+    position: relative;
+    z-index: 1;
+}
+
+.zombie-detector-layout {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+    margin-bottom: 14px;
+    position: relative;
+    z-index: 1;
+}
+
+.zombie-video-frame {
+    width: 100%;
+    max-width: 360px;
+    aspect-ratio: 4 / 3;
+    border-radius: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    background: radial-gradient(circle at top, #050815, #020308 75%);
+    box-shadow: 0 0 22px rgba(0, 0, 0, 0.85);
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 6px;
+}
+
+.zombie-video-placeholder {
+    font-family: var(--font-mono);
+    font-size: 0.78rem;
+    color: var(--muted);
+    text-align: center;
+    line-height: 1.5;
+}
+
+.zombie-video-placeholder span {
+    display: inline-block;
+    margin-top: 4px;
+    padding: 3px 8px;
+    border-radius: 999px;
+    border: 1px dashed rgba(0, 255, 195, 0.4);
+    background: rgba(0, 0, 0, 0.65);
+    font-size: 0.7rem;
+}
+
+/* When Teachable Machine injects a <canvas> or <video> inside #webcam-container */
+#webcam-container canvas,
+#webcam-container video,
+#webcam-container img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.zombie-labels {
+    font-family: var(--font-mono);
+    font-size: 0.78rem;
+    color: var(--muted);
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    align-items: center;
+    min-height: 1.2rem;
+}
+
+.zombie-labels > div {
+    padding: 2px 6px;
+    border-radius: 999px;
+    background: rgba(0, 0, 0, 0.7);
+    border: 1px solid rgba(0, 255, 195, 0.25);
+    margin-top: 2px;
+}
+
+/* Reuse existing .btn but slightly tweak spacing through a modifier class */
+.zombie-btn {
+    margin-top: 4px;
+    position: relative;
+    z-index: 1;
+}
+
+.zombie-note {
+    margin-top: 12px;
+    font-size: 0.72rem;
+    color: var(--muted);
+    font-family: var(--font-mono);
+    opacity: 0.85;
+    position: relative;
+    z-index: 1;
+}
+
+.zombie-note span {
+    color: var(--accent);
+}
+
+/* Responsive: keep the card centered on mobile as well */
+@media (max-width: 768px) {
+    .zombie-section {
+        min-height: calc(100vh - 120px);
+    }
+
+    .zombie-card {
+        padding: 20px 16px 24px;
+    }
+}
+
+/* ZOMBIE STATUS BADGE */
+.zombie-status-wrap {
+    margin: 6px 0 2px;
+    position: relative;
+    z-index: 1;
+}
+
+.zombie-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 4px 10px;
+    border-radius: 999px;
+    border: 1px solid rgba(148, 163, 184, 0.4);
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    background: rgba(15, 23, 42, 0.9);
+    color: var(--muted);
+}
+
+.zombie-badge-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 999px;
+    background: rgba(148, 163, 184, 0.9);
+    box-shadow: 0 0 8px rgba(148, 163, 184, 0.9);
+}
+
+/* idle state */
+.zombie-badge--idle .zombie-badge-dot {
+    background: rgba(148, 163, 184, 0.9);
+    box-shadow: 0 0 8px rgba(148, 163, 184, 0.9);
+}
+
+/* safe / human-ish */
+.zombie-badge--safe {
+    border-color: rgba(34, 197, 94, 0.9);
+    background: rgba(22, 163, 74, 0.14);
+    color: #bbf7d0;
+}
+
+.zombie-badge--safe .zombie-badge-dot {
+    background: rgba(34, 197, 94, 0.95);
+    box-shadow: 0 0 10px rgba(34, 197, 94, 0.9);
+}
+
+/* alert / zombie detected */
+.zombie-badge--alert {
+    border-color: rgba(248, 113, 113, 0.95);
+    background: rgba(248, 113, 113, 0.16);
+    color: #fecaca;
+}
+
+.zombie-badge--alert .zombie-badge-dot {
+    background: rgba(248, 113, 113, 1);
+    box-shadow: 0 0 12px rgba(248, 113, 113, 1);
+}
+
+/* LABELS + PROGRESS BARS (0–100%) */
+.zombie-labels {
+    font-family: var(--font-mono);
+    font-size: 0.78rem;
+    color: var(--muted);
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    align-items: stretch;
+    width: 100%;
+}
+
+.zombie-labels > div {
+    width: 100%;
+}
+
+.zombie-label-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 2px;
+}
+
+.zombie-label-name {
+    text-transform: lowercase;
+}
+
+.zombie-label-percent {
+    font-size: 0.72rem;
+    opacity: 0.9;
+}
+
+.zombie-bar {
+    position: relative;
+    height: 6px;
+    border-radius: 999px;
+    background: rgba(15, 23, 42, 0.9);
+    overflow: hidden;
+}
+
+.zombie-bar-fill {
+    position: absolute;
+    inset: 0;
+    width: 0;
+    border-radius: inherit;
+    background: linear-gradient(90deg, rgba(34, 197, 94, 0.2), rgba(34, 197, 94, 0.95));
+    box-shadow: 0 0 10px rgba(34, 197, 94, 0.8);
+    transition: width 0.18s ease-out;
+}
+
+.zombie-bar-fill--zombie {
+    background: linear-gradient(90deg, rgba(248, 113, 113, 0.35), rgba(248, 113, 113, 1));
+    box-shadow: 0 0 12px rgba(248, 113, 113, 0.9);
+}
+
+
+
