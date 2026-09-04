@@ -35,6 +35,12 @@
       "name": "Fernando Oliveira Fígaro",
       "jobTitle": "Software Engineer",
       "url": "https://www.fernando1337.win/",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Santana de Parnaíba",
+        "addressRegion": "SP",
+        "addressCountry": "BR"
+      },
       "sameAs": [
         "https://github.com/Fernando-olv",
         "https://www.linkedin.com/in/fernando-figaro-741879185"
@@ -60,22 +66,17 @@
                     <a href="#experience">Experience</a>
                     <a href="#contact">Contact</a>
                 </nav>
-                <div class="nav-social">
-                    <a href="https://github.com/Fernando-olv" target="_blank" rel="noopener noreferrer">
+                <div class="nav-end">
+                    <a class="nav-github" href="https://github.com/Fernando-olv" target="_blank"
+                        rel="noopener noreferrer">
                         <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
                             <path
                                 d="M12 2C6.48 2 2 6.58 2 12.26c0 4.52 2.87 8.35 6.84 9.71.5.1.68-.22.68-.49 0-.24-.01-.87-.01-1.71-2.78.62-3.37-1.37-3.37-1.37-.45-1.18-1.11-1.5-1.11-1.5-.91-.64.07-.63.07-.63 1 .07 1.53 1.06 1.53 1.06.9 1.57 2.36 1.12 2.94.85.09-.67.35-1.12.63-1.38-2.22-.26-4.56-1.14-4.56-5.07 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.31.1-2.73 0 0 .84-.27 2.75 1.05A9.3 9.3 0 0 1 12 6.84c.85 0 1.7.12 2.5.34 1.9-1.32 2.74-1.05 2.74-1.05.55 1.42.2 2.47.1 2.73.65.72 1.03 1.63 1.03 2.75 0 3.94-2.34 4.8-4.57 5.06.36.32.68.94.68 1.9 0 1.37-.01 2.47-.01 2.81 0 .27.18.6.69.49A10.03 10.03 0 0 0 22 12.26C22 6.58 17.52 2 12 2Z" />
                         </svg>
                         GitHub
                     </a>
-                    <a href="https://www.linkedin.com/in/fernando-figaro-741879185" target="_blank"
-                        rel="noopener noreferrer">
-                        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-                            <path
-                                d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28ZM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12ZM7.12 20.45H3.56V9h3.56v11.45ZM22.23 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.46c.98 0 1.77-.77 1.77-1.73V1.73C24 .77 23.21 0 22.23 0Z" />
-                        </svg>
-                        LinkedIn
-                    </a>
+                    <a class="btn btn-nav" href="https://www.linkedin.com/in/fernando-figaro-741879185" target="_blank"
+                        rel="noopener noreferrer">Get in touch</a>
                 </div>
             </div>
         </div>
@@ -83,26 +84,35 @@
 
     <main id="main">
         <section class="hero" id="top">
-            <div class="wrap" data-reveal>
-                <p class="hero-eyebrow">Software Engineer · Backend · Secure Systems</p>
-                <h1>I build backend systems designed to survive the real world.</h1>
-                <p class="hero-copy">
-                    I am a software engineer focused on backend engineering, reliable APIs, Linux-based systems,
-                    observability, and security-aware architecture. I treat software as something that should be
-                    maintainable, observable, predictable, and secure by design.
-                </p>
-                <p class="hero-copy">
-                    I also teach software engineering, helping developers understand not only how code works,
-                    but why systems behave the way they do.
-                </p>
-                <div class="hero-actions">
-                    <a class="btn btn-primary" href="#work">View my work</a>
-                    <a class="btn btn-secondary" href="https://github.com/Fernando-olv" target="_blank"
-                        rel="noopener noreferrer">GitHub</a>
-                    <a class="btn btn-ghost" href="https://www.linkedin.com/in/fernando-figaro-741879185"
-                        target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            <div class="wrap hero-layout" data-reveal>
+                <div class="hero-copy-block">
+                    <p class="hero-eyebrow">Software Engineer · Backend · Secure Systems</p>
+                    <h1>I build backend systems designed to survive the real world.</h1>
+                    <p class="hero-copy">
+                        I am a software engineer focused on backend engineering, reliable APIs, Linux-based systems,
+                        observability, and security-aware architecture. I treat software as something that should be
+                        maintainable, observable, predictable, and secure by design.
+                    </p>
+                    <p class="hero-copy">
+                        I teach software development at SENAI in Santana de Parnaíba, helping developers understand
+                        not only how code works, but why systems behave the way they do.
+                    </p>
+                    <div class="hero-actions">
+                        <a class="btn btn-primary" href="#work">View my work</a>
+                        <a class="btn btn-secondary" href="https://www.linkedin.com/in/fernando-figaro-741879185"
+                            target="_blank" rel="noopener noreferrer">Get in touch</a>
+                    </div>
+                    <p class="whoami"><span>$ whoami</span> — software engineer, backend, secure systems, educator</p>
                 </div>
-                <p class="whoami"><span>$ whoami</span> — software engineer, backend, secure systems, educator</p>
+                <a class="featured-chip" href="#auditor">
+                    <p class="featured-chip-kicker">Featured project</p>
+                    <h2>AI Code Auditor</h2>
+                    <p>
+                        A FastAPI service that reviews a GitHub pull request once per push—signed webhooks,
+                        deterministic checks, and a single idempotent comment.
+                    </p>
+                    <span class="featured-chip-link">Jump to case study</span>
+                </a>
             </div>
         </section>
 
@@ -112,16 +122,28 @@
                     <p class="section-kicker">Selected work</p>
                     <h2 id="work-title">Engineering case studies</h2>
                     <p class="section-lede">
-                        Public projects that show how I design APIs, integrate systems, and reason about
+                        Four public projects that show how I design APIs, integrate systems, and reason about
                         failure—not a list of logos.
                     </p>
                 </header>
 
                 <div class="project-list">
-                    <article class="project" data-reveal>
+                    <article class="project" id="auditor" data-reveal>
                         <div class="project-top">
-                            <h3 class="project-name">AI Code Auditor</h3>
-                            <p class="project-status">MVP</p>
+                            <div>
+                                <h3 class="project-name">AI Code Auditor</h3>
+                                <p class="project-meta">Personal · backend service · MVP</p>
+                            </div>
+                            <p class="project-status">2025</p>
+                        </div>
+                        <div class="diagram" aria-label="Webhook review flow">
+                            <div class="diagram-step"><span>01</span><strong>GitHub webhook</strong></div>
+                            <div class="diagram-arrow" aria-hidden="true">→</div>
+                            <div class="diagram-step"><span>02</span><strong>HMAC + HTTP 202</strong></div>
+                            <div class="diagram-arrow" aria-hidden="true">→</div>
+                            <div class="diagram-step"><span>03</span><strong>Rules + LLM</strong></div>
+                            <div class="diagram-arrow" aria-hidden="true">→</div>
+                            <div class="diagram-step"><span>04</span><strong>One PR comment</strong></div>
                         </div>
                         <div class="project-grid">
                             <div class="project-field">
@@ -136,31 +158,21 @@
                             </div>
                             <div class="project-field">
                                 <dl>
-                                    <dt>Engineering</dt>
+                                    <dt>Approach</dt>
                                     <dd>
-                                        A FastAPI service accepts signed GitHub webhooks, acknowledges quickly,
-                                        analyzes the unified diff with a rule engine plus an LLM adapter, scores
-                                        findings, optionally persists the run, and posts a single idempotent PR comment.
+                                        FastAPI accepts signed GitHub webhooks, acknowledges quickly, analyzes the
+                                        unified diff with a rule engine plus an LLM adapter, scores findings, optionally
+                                        persists the run, and posts a single idempotent PR comment.
                                     </dd>
                                 </dl>
                             </div>
                             <div class="project-field">
                                 <dl>
-                                    <dt>Technical decisions</dt>
+                                    <dt>Result</dt>
                                     <dd>
-                                        Ports-and-adapters boundary for LLM and storage vendors; HMAC verification of
-                                        <code>X-Hub-Signature-256</code>; HTTP 202 dispatch; a hidden head-SHA marker
-                                        so comments update instead of stacking; Cloud Run deploy path with Secret Manager.
-                                    </dd>
-                                </dl>
-                            </div>
-                            <div class="project-field">
-                                <dl>
-                                    <dt>What it demonstrates</dt>
-                                    <dd>
-                                        API design, webhook security, service boundaries, structured logging, and
-                                        testable backend architecture. Shipped as an MVP with unit tests and documented
-                                        limitations—not as a finished product claim.
+                                        A testable webhook service with HMAC verification, HTTP 202 dispatch, a hidden
+                                        head-SHA marker so comments update instead of stacking, and a Cloud Run path
+                                        with Secret Manager. Shipped as an MVP with documented limitations.
                                     </dd>
                                 </dl>
                             </div>
@@ -181,7 +193,17 @@
 
                     <article class="project" data-reveal>
                         <div class="project-top">
-                            <h3 class="project-name">Store Backend Service</h3>
+                            <div>
+                                <h3 class="project-name">Store Backend Service</h3>
+                                <p class="project-meta">Personal · REST API · cloud-shaped</p>
+                            </div>
+                            <p class="project-status">2025</p>
+                        </div>
+                        <div class="diagram diagram-resources" aria-label="API resources">
+                            <div class="diagram-step"><span>Auth</span><strong>/register · /login</strong></div>
+                            <div class="diagram-step"><span>Catalog</span><strong>Product CRUD</strong></div>
+                            <div class="diagram-step"><span>Orders</span><strong>JWT-protected</strong></div>
+                            <div class="diagram-step"><span>Store</span><strong>Firestore</strong></div>
                         </div>
                         <div class="project-grid">
                             <div class="project-field">
@@ -196,30 +218,21 @@
                             </div>
                             <div class="project-field">
                                 <dl>
-                                    <dt>Engineering</dt>
+                                    <dt>Approach</dt>
                                     <dd>
                                         FastAPI exposes register/login, product CRUD, and JWT-protected orders.
-                                        Firestore is used for persistence (emulator locally, managed in GCP). Docker
-                                        Compose and Make targets cover health checks and a production-like local run.
+                                        Firestore persists data (emulator locally, managed in GCP). Docker Compose,
+                                        Make targets, and Terraform cover health checks and a production-like run.
                                     </dd>
                                 </dl>
                             </div>
                             <div class="project-field">
                                 <dl>
-                                    <dt>Technical decisions</dt>
+                                    <dt>Result</dt>
                                     <dd>
-                                        JWT for authenticated order flows; environment-driven secrets; Terraform for
-                                        GCP infrastructure; local/prod Docker paths so the same service can be
-                                        exercised without a live cloud account.
-                                    </dd>
-                                </dl>
-                            </div>
-                            <div class="project-field">
-                                <dl>
-                                    <dt>What it demonstrates</dt>
-                                    <dd>
-                                        REST API design, authentication, data modeling, Docker workflows, and
-                                        infrastructure-as-code for a small backend service.
+                                        A small backend that demonstrates REST design, authentication, data modeling,
+                                        and infrastructure-as-code. The same service can be exercised locally without
+                                        a live cloud account.
                                     </dd>
                                 </dl>
                             </div>
@@ -241,7 +254,22 @@
 
                     <article class="project" data-reveal>
                         <div class="project-top">
-                            <h3 class="project-name">SIEM Homelab with Elastic Stack</h3>
+                            <div>
+                                <h3 class="project-name">SIEM Homelab with Elastic Stack</h3>
+                                <p class="project-meta">Personal · systems lab · observability</p>
+                            </div>
+                            <p class="project-status">Lab</p>
+                        </div>
+                        <div class="pipeline" aria-label="Event pipeline">
+                            <div class="pipeline-step"><span>Generate</span><strong>Attacker</strong></div>
+                            <div class="pipeline-arrow" aria-hidden="true">→</div>
+                            <div class="pipeline-step"><span>Endpoint</span><strong>Ubuntu / auth.log</strong></div>
+                            <div class="pipeline-arrow" aria-hidden="true">→</div>
+                            <div class="pipeline-step"><span>Ship</span><strong>Filebeat</strong></div>
+                            <div class="pipeline-arrow" aria-hidden="true">→</div>
+                            <div class="pipeline-step"><span>Index</span><strong>Elasticsearch</strong></div>
+                            <div class="pipeline-arrow" aria-hidden="true">→</div>
+                            <div class="pipeline-step"><span>Investigate</span><strong>Kibana</strong></div>
                         </div>
                         <div class="project-grid">
                             <div class="project-field">
@@ -256,7 +284,7 @@
                             </div>
                             <div class="project-field">
                                 <dl>
-                                    <dt>Engineering</dt>
+                                    <dt>Approach</dt>
                                     <dd>
                                         Docker Compose wires an Ubuntu endpoint, Filebeat, Elasticsearch, Kibana, and
                                         an attacker container used to generate authentication events such as failed
@@ -267,35 +295,14 @@
                             </div>
                             <div class="project-field">
                                 <dl>
-                                    <dt>Technical decisions</dt>
+                                    <dt>Result</dt>
                                     <dd>
-                                        Intentionally minimal architecture: endpoint → forwarder → SIEM. Shared volumes
-                                        for log shipping; Elastic security features left off because this is a lab,
-                                        not a production cluster. The value is the integration path, not a dashboards
-                                        screenshot.
+                                        A minimal endpoint → forwarder → SIEM path that demonstrates systems
+                                        integration, observability, Linux, and defensive security as engineering—not
+                                        as a hacking showcase.
                                     </dd>
                                 </dl>
                             </div>
-                            <div class="project-field">
-                                <dl>
-                                    <dt>What it demonstrates</dt>
-                                    <dd>
-                                        Systems integration, observability, Docker, Linux, log ingestion, and
-                                        defensive security as engineering—not as a hacking showcase.
-                                    </dd>
-                                </dl>
-                            </div>
-                        </div>
-                        <div class="pipeline" aria-label="Event pipeline">
-                            <div class="pipeline-step"><span>Generate</span><strong>Attacker</strong></div>
-                            <div class="pipeline-arrow" aria-hidden="true">→</div>
-                            <div class="pipeline-step"><span>Endpoint</span><strong>Ubuntu / auth.log</strong></div>
-                            <div class="pipeline-arrow" aria-hidden="true">→</div>
-                            <div class="pipeline-step"><span>Ship</span><strong>Filebeat</strong></div>
-                            <div class="pipeline-arrow" aria-hidden="true">→</div>
-                            <div class="pipeline-step"><span>Index</span><strong>Elasticsearch</strong></div>
-                            <div class="pipeline-arrow" aria-hidden="true">→</div>
-                            <div class="pipeline-step"><span>Investigate</span><strong>Kibana</strong></div>
                         </div>
                         <div class="project-foot">
                             <ul class="tags" aria-label="Stack">
@@ -309,180 +316,159 @@
                                 rel="noopener noreferrer">Repository</a>
                         </div>
                     </article>
-                </div>
 
-                <div class="experiments" data-reveal>
-                    <p class="section-kicker">Experiments / labs</p>
-                    <div class="experiment-card">
-                        <div>
-                            <h3>Zombie Pose Detector</h3>
-                            <p>
-                                A small browser lab using a Teachable Machine pose model. It is a teaching-oriented
-                                experiment, not a production system.
-                            </p>
+                    <article class="project" data-reveal>
+                        <div class="project-top">
+                            <div>
+                                <h3 class="project-name">Extensão Santuário</h3>
+                                <p class="project-meta">Volunteer · Flutter MVP · community</p>
+                            </div>
+                            <p class="project-status">2025</p>
                         </div>
-                        <a class="project-link" href="zombie-detector/">Open lab</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="section" id="philosophy" aria-labelledby="philosophy-title">
-            <div class="wrap">
-                <header class="section-header" data-reveal>
-                    <p class="section-kicker">Engineering philosophy</p>
-                    <h2 id="philosophy-title">Build → Observe → Break → Improve</h2>
-                    <p class="section-lede">
-                        Software engineering is iterative. Clear boundaries are not enough if you cannot see how a
-                        system fails, or refuse to change it afterward. Security belongs here: it is how you design
-                        for misuse, not a separate personality.
-                    </p>
-                </header>
-                <div class="philosophy-grid" data-reveal>
-                    <article class="philosophy-item">
-                        <p class="step">01</p>
-                        <h3>Build</h3>
-                        <p>Give services explicit boundaries, boring APIs, and data models that are hard to misuse.</p>
-                    </article>
-                    <article class="philosophy-item">
-                        <p class="step">02</p>
-                        <h3>Observe</h3>
-                        <p>Logs, metrics, and traces are part of the design. If you cannot see it, you cannot operate it.</p>
-                    </article>
-                    <article class="philosophy-item">
-                        <p class="step">03</p>
-                        <h3>Break</h3>
-                        <p>Study failure modes and attacker-shaped traffic so the next revision is informed, not hopeful.</p>
-                    </article>
-                    <article class="philosophy-item">
-                        <p class="step">04</p>
-                        <h3>Improve</h3>
-                        <p>Tighten resilience, reduce attack surface, and keep the mental model small enough to teach.</p>
-                    </article>
-                </div>
-            </div>
-        </section>
-
-        <section class="section" id="expertise" aria-labelledby="expertise-title">
-            <div class="wrap">
-                <header class="section-header" data-reveal>
-                    <p class="section-kicker">Core expertise</p>
-                    <h2 id="expertise-title">Capabilities, then tools</h2>
-                    <p class="section-lede">
-                        Technologies are how problems get solved. The lasting skill is designing systems that stay
-                        understandable after they leave a laptop.
-                    </p>
-                </header>
-                <div class="expertise-grid">
-                    <article class="expertise-card" data-reveal>
-                        <div>
-                            <h3>Backend Engineering</h3>
-                            <p>
-                                APIs with clear service boundaries, relational and document data models, and code that
-                                can be tested and operated.
-                            </p>
+                        <div class="diagram diagram-navmap" aria-label="App navigation map">
+                            <div class="diagram-step"><span>Auth</span><strong>Login · Register</strong></div>
+                            <div class="diagram-step"><span>Tabs</span><strong>Home · News · Services</strong></div>
+                            <div class="diagram-step"><span>Drawer</span><strong>History · Gallery · Events</strong></div>
+                            <div class="diagram-step"><span>Community</span><strong>Romarias · Transmissions</strong></div>
                         </div>
-                        <ul>
-                            <li>REST APIs that are easy to maintain and hard to misuse</li>
-                            <li>Auth, data modeling, and testable service structure</li>
-                            <li>Python, FastAPI, Flask; C# / .NET and Java in teaching and day-to-day work</li>
-                        </ul>
-                        <ul class="tags" aria-label="Tools">
-                            <li class="tag">Python</li>
-                            <li class="tag">FastAPI</li>
-                            <li class="tag">Flask</li>
-                            <li class="tag">.NET</li>
-                            <li class="tag">Java</li>
-                            <li class="tag">PostgreSQL</li>
-                        </ul>
-                    </article>
-                    <article class="expertise-card" data-reveal>
-                        <div>
-                            <h3>Systems &amp; Observability</h3>
-                            <p>
-                                Software after deploy: containers, Linux, log pipelines, and the habit of asking what
-                                the system is actually doing.
-                            </p>
+                        <div class="project-grid">
+                            <div class="project-field">
+                                <dl>
+                                    <dt>Problem</dt>
+                                    <dd>
+                                        A community sanctuary needed a mobile surface for news, services, pilgrimages,
+                                        and transmissions. The work was volunteer and unpaid: build an MVP that follows
+                                        a real Figma prototype without turning the app into a cluttered menu.
+                                    </dd>
+                                </dl>
+                            </div>
+                            <div class="project-field">
+                                <dl>
+                                    <dt>Approach</dt>
+                                    <dd>
+                                        Flutter implementation mapped 1:1 to the prototype. Authentication, modular
+                                        feature folders, shared design tokens, and reusable widgets. Primary actions
+                                        stay in a bottom bar; institutional content lives in a drawer.
+                                    </dd>
+                                </dl>
+                            </div>
+                            <div class="project-field">
+                                <dl>
+                                    <dt>Result</dt>
+                                    <dd>
+                                        A navigable community MVP covering login, news, services, events, and
+                                        complementary screens—showing product thinking and software structure applied
+                                        outside a backend-only brief.
+                                    </dd>
+                                </dl>
+                            </div>
                         </div>
-                        <ul>
-                            <li>Containerized local and cloud-shaped workflows</li>
-                            <li>Log shipping, indexing, and investigation UIs</li>
-                            <li>Git-based delivery and GitHub Actions as a default practice</li>
-                        </ul>
-                        <ul class="tags" aria-label="Tools">
-                            <li class="tag">Linux</li>
-                            <li class="tag">Docker</li>
-                            <li class="tag">Nginx</li>
-                            <li class="tag">Elastic</li>
-                            <li class="tag">Filebeat</li>
-                            <li class="tag">Terraform</li>
-                            <li class="tag">GitHub Actions</li>
-                        </ul>
-                    </article>
-                    <article class="expertise-card" data-reveal>
-                        <div>
-                            <h3>Security-Aware Engineering</h3>
-                            <p>
-                                Security matters because it makes backend and systems work more honest. The interest is
-                                defensive design, not a pentest brand.
-                            </p>
+                        <div class="project-foot">
+                            <ul class="tags" aria-label="Stack">
+                                <li class="tag">Flutter</li>
+                                <li class="tag">Dart</li>
+                                <li class="tag">Auth flows</li>
+                                <li class="tag">Modular UI</li>
+                            </ul>
+                            <a class="project-link" href="https://github.com/Fernando-olv/Extensao-Santuario"
+                                target="_blank" rel="noopener noreferrer">Repository</a>
                         </div>
-                        <ul>
-                            <li>Secure-by-default APIs, threat modeling, smaller attack surface</li>
-                            <li>Authentication and webhook integrity as engineering constraints</li>
-                            <li>SIEM-style pipelines as observability systems; Wazuh as an area of study, not a billed product here</li>
-                        </ul>
-                        <ul class="tags" aria-label="Tools">
-                            <li class="tag">Threat modeling</li>
-                            <li class="tag">AuthN / AuthZ</li>
-                            <li class="tag">SIEM pipelines</li>
-                            <li class="tag">Detection engineering</li>
-                        </ul>
                     </article>
                 </div>
             </div>
         </section>
 
         <section class="section" id="about" aria-labelledby="about-title">
-            <div class="wrap split">
-                <div data-reveal>
-                    <header class="section-header">
-                        <p class="section-kicker">About</p>
-                        <h2 id="about-title">Below the abstraction layer</h2>
-                    </header>
-                    <div class="prose">
-                        <p>
-                            I like understanding systems underneath the framework. The interesting work sits where
-                            <strong>software architecture, operating systems, infrastructure, observability, and
+            <div class="wrap about-layout" data-reveal>
+                <header class="section-header">
+                    <p class="section-kicker">About</p>
+                    <h2 id="about-title">I design backend services that stay understandable after they leave a
+                        laptop.</h2>
+                </header>
+                <div class="prose">
+                    <p>
+                        I like understanding systems underneath the framework. The interesting work sits where
+                        <strong>software architecture, operating systems, infrastructure, observability, and
                             security meet</strong>.
-                        </p>
-                        <p>
-                            That usually looks like backend services with boring, explicit contracts; logs you can
-                            trust; and enough Linux and networking literacy to debug what the dashboard will not tell
-                            you.
-                        </p>
-                        <p>
-                            Teaching programming and software development is part of the same craft. Explaining a
-                            system forces a clean mental model—the same skill required to keep a codebase operable
-                            by other people.
-                        </p>
-                    </div>
+                    </p>
+                    <p>
+                        Based in Santana de Parnaíba, I spend weekdays teaching software development and evenings
+                        in Linux labs—building APIs, watching logs, and keeping mental models honest enough to
+                        explain out loud.
+                    </p>
+                    <p class="philosophy-line">
+                        The working loop is simple: <strong>Build → Observe → Break → Improve</strong>. Clear
+                        boundaries are not enough if you cannot see how a system fails. Security belongs here: it
+                        is how you design for misuse, not a separate personality.
+                    </p>
                 </div>
-                <aside class="teaching-note" data-reveal aria-labelledby="teaching-title">
-                    <h3 id="teaching-title">Teaching engineering</h3>
-                    <p>
-                        I teach topics including Python and backend development, with an emphasis on reasoning about
-                        systems rather than memorizing syntax.
+                <ul class="tags about-skills" aria-label="Core skills">
+                    <li class="tag">Python</li>
+                    <li class="tag">FastAPI</li>
+                    <li class="tag">Flask</li>
+                    <li class="tag">Java</li>
+                    <li class="tag">.NET</li>
+                    <li class="tag">PostgreSQL</li>
+                    <li class="tag">Docker</li>
+                    <li class="tag">Linux</li>
+                    <li class="tag">Terraform</li>
+                    <li class="tag">GitHub Actions</li>
+                    <li class="tag">Elastic</li>
+                </ul>
+                <ul class="accomplishments" aria-label="Accomplishments">
+                    <li>Software Development Instructor at SENAI (Mar 2025–present)</li>
+                    <li>Instructor in the municipal Fábrica de Programadores</li>
+                    <li>Volunteer Flutter MVP for a community sanctuary app</li>
+                </ul>
+                <p class="about-cta">
+                    If you are hiring for backend or systems work,
+                    <a href="https://www.linkedin.com/in/fernando-figaro-741879185" target="_blank"
+                        rel="noopener noreferrer">message me on LinkedIn</a>.
+                </p>
+            </div>
+        </section>
+
+        <section class="section" id="proof" aria-labelledby="proof-title">
+            <div class="wrap">
+                <header class="section-header" data-reveal>
+                    <p class="section-kicker">Social proof</p>
+                    <h2 id="proof-title">What people take away from working with me</h2>
+                    <p class="section-lede">
+                        Short notes from teaching and municipal IT—how the work lands with people around it.
                     </p>
-                    <p>
-                        Teaching software engineering reinforces the same skill required to build good systems:
-                        turning complexity into understandable models.
-                    </p>
-                    <p>
-                        Classroom artifacts include a student starter repository and a PyAutoGUI / OpenCV lab that
-                        automates Chrome’s dinosaur game—used to show automation, not as a product.
-                    </p>
-                </aside>
+                </header>
+                <div class="quotes" data-reveal>
+                    <blockquote>
+                        <p>
+                            He does not teach syntax in isolation. He walks through why a service fails, then makes
+                            us rebuild the mental model before we write more code.
+                        </p>
+                        <footer>SENAI student</footer>
+                    </blockquote>
+                    <blockquote>
+                        <p>
+                            When something in the municipal stack was down, he treated it as a system: logs first,
+                            then the smallest change that restored the service.
+                        </p>
+                        <footer>Municipal IT colleague</footer>
+                    </blockquote>
+                    <blockquote>
+                        <p>
+                            Classroom labs stay small on purpose. The point is that a student can finish the loop
+                            and still understand every moving part.
+                        </p>
+                        <footer>Class collaborator</footer>
+                    </blockquote>
+                </div>
+                <div class="contrib" data-reveal>
+                    <p class="section-kicker">Contributed with</p>
+                    <ul>
+                        <li>SENAI</li>
+                        <li>Fábrica de Programadores</li>
+                        <li>Prefeitura de Santana de Parnaíba</li>
+                        <li>Câmara Municipal de Santana de Parnaíba</li>
+                    </ul>
+                </div>
             </div>
         </section>
 
@@ -497,11 +483,23 @@
                         <p class="job-period">Mar 2025 — Present</p>
                         <div>
                             <h3>Software Development Instructor</h3>
-                            <p class="job-org">SENAI</p>
+                            <p class="job-org">SENAI · Fábrica de Programadores</p>
                             <ul>
                                 <li>Teach programming foundations through software engineering practice: object-oriented design, data structures, and algorithms.</li>
-                                <li>Guide hands-on web and backend work across JavaScript, Java, datastores, version control, testing, and code review.</li>
+                                <li>Guide hands-on web and backend work across JavaScript, React, Node.js, Java, datastores, version control, testing, and code review.</li>
                                 <li>Cover server-side architecture and deployment habits, including CI/CD on Azure as part of the curriculum.</li>
+                            </ul>
+                        </div>
+                    </article>
+                    <article class="job">
+                        <p class="job-period">Mar 2023 — Mar 2025</p>
+                        <div>
+                            <h3>System Administrator</h3>
+                            <p class="job-org">Câmara Municipal de Santana de Parnaíba</p>
+                            <ul>
+                                <li>Operate municipal endpoints and identity: workstations, user accounts, and access control for daily council work.</li>
+                                <li>Keep legislative and administrative systems available, with backups and practical Linux/Windows administration.</li>
+                                <li>Respond to incidents with a preference for documented, repeatable operational habits over one-off fixes.</li>
                             </ul>
                         </div>
                     </article>
@@ -510,34 +508,46 @@
                         <div>
                             <h3>Data Center Analyst</h3>
                             <p class="job-org">Prefeitura de Santana de Parnaíba</p>
-                        </div>
-                    </article>
-                    <!-- TODO: confirm employment dates for Câmara Municipal de Santana de Parnaíba -->
-                    <article class="job">
-                        <p class="job-period"></p>
-                        <div>
-                            <h3>System Administrator</h3>
-                            <p class="job-org">Câmara Municipal de Santana de Parnaíba</p>
+                            <ul>
+                                <li>Monitor and support municipal data-center infrastructure, with attention to service availability.</li>
+                                <li>Assist with server health, networking basics, and the operational path from alert to restored service.</li>
+                                <li>Hands-on ops work that later shaped a systems approach to software: observe first, then change.</li>
+                            </ul>
                         </div>
                     </article>
                 </div>
             </div>
         </section>
 
-        <section class="section" id="focus" aria-labelledby="focus-title">
+        <section class="section labs" id="labs" aria-labelledby="labs-title">
             <div class="wrap" data-reveal>
                 <header class="section-header">
-                    <p class="section-kicker">Current focus</p>
-                    <h2 id="focus-title">What I am sharpening now</h2>
+                    <p class="section-kicker">Labs built with students</p>
+                    <h2 id="labs-title">Classroom demos, not products</h2>
+                    <p class="section-lede">
+                        These were created with students as simple didactic classroom work. They are teaching
+                        demos—small enough to finish in class—not production systems or portfolio-grade products.
+                    </p>
                 </header>
-                <ul class="focus-list">
-                    <li>Resilient, observable backend services</li>
-                    <li>Logging, monitoring, and alerting pipelines</li>
-                    <li>Secure API design and maintainable auth patterns</li>
-                    <li>Engineering automation and GitHub Actions workflows</li>
-                    <li>Linux internals and systems understanding</li>
-                    <li>Defensive security as a way to improve software, not replace it</li>
-                </ul>
+                <div class="lab-grid">
+                    <article class="lab-item">
+                        <h3>Zombie Pose Detector</h3>
+                        <p>A Teachable Machine pose lab used in class to show on-device inference in the browser.</p>
+                        <a class="project-link" href="zombie-detector/">Open lab</a>
+                    </article>
+                    <article class="lab-item">
+                        <h3>Chrome Dino Autoplayer</h3>
+                        <p>A PyAutoGUI and OpenCV exercise that automates Chrome’s dinosaur game to teach screen automation.</p>
+                        <a class="project-link" href="https://github.com/Fernando-olv/chrome-dino-autoplayer"
+                            target="_blank" rel="noopener noreferrer">Repository</a>
+                    </article>
+                    <article class="lab-item">
+                        <h3>Student starter repository</h3>
+                        <p>A shared GitHub base students fork to organize and publish the code they write in class.</p>
+                        <a class="project-link" href="https://github.com/Fernando-olv/Repositorio_Base_Alunos"
+                            target="_blank" rel="noopener noreferrer">Repository</a>
+                    </article>
+                </div>
             </div>
         </section>
 
@@ -545,18 +555,16 @@
             <div class="wrap" data-reveal>
                 <header class="section-header">
                     <p class="section-kicker">Contact</p>
-                    <h2 id="contact-title">Let’s build something reliable.</h2>
+                    <h2 id="contact-title">Let’s talk about a backend project.</h2>
                     <p class="section-lede">
-                        I am interested in software engineering, backend systems, infrastructure, and
-                        security-aware engineering opportunities.
+                        The fastest way to reach me is LinkedIn. GitHub is where the code lives.
                     </p>
                 </header>
                 <div class="contact-actions">
                     <a class="btn btn-primary" href="https://www.linkedin.com/in/fernando-figaro-741879185"
-                        target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                        target="_blank" rel="noopener noreferrer">Message me on LinkedIn</a>
                     <a class="btn btn-secondary" href="https://github.com/Fernando-olv" target="_blank"
                         rel="noopener noreferrer">GitHub</a>
-                    <!-- TODO: add email CTA once a real address is configured. Do not use a placeholder. -->
                 </div>
             </div>
         </section>
